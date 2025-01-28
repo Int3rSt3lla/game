@@ -9,6 +9,7 @@ public class PlayerShooting : MonoBehaviour
 
    void Update()
    {
+        if (UImanager.isPaused) return;
         RotateBulletSpawnPointTowardsMouse();
 
         if (Input.GetButtonDown("Fire1"))
@@ -47,6 +48,7 @@ public class PlayerShooting : MonoBehaviour
 
     Destroy(bullet, 10f);
    }
+   
    
 
 }
