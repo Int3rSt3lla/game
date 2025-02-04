@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes 1/Scene grass.unity
     guid: 39ff46283e729714c9b02febf2dacf44
+  - enabled: 1
+    path: Assets/Scenes 1/Dark room.unity
+    guid: 298e78f1ec5f2ba4f84d2038992210ab
   m_configObjects: {}
