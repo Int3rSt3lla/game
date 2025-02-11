@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 4352768578391318537}
   - component: {fileID: 7078473725365225912}
   - component: {fileID: 7441400392789267015}
-  - component: {fileID: 3951997642346803021}
   - component: {fileID: 1650802970104323509}
   - component: {fileID: 4599863061071740523}
+  - component: {fileID: 8006216430036211536}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -38,7 +38,7 @@ Transform:
   - {fileID: 5786814834396159382}
   - {fileID: 4126186465485934027}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1876053694774959746
 SpriteRenderer:
@@ -181,20 +181,6 @@ MonoBehaviour:
   firePointRotation: {fileID: 5786814834396159382}
   bulletSpawnPoint: {fileID: 9005467059918234638}
   bulletSpeed: 20
---- !u!114 &3951997642346803021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1274433659340541568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eccc3efeb7a2ff4438ad61908ccf0bd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  baseSpeed: 5
-  sprint: 10
 --- !u!95 &1650802970104323509
 Animator:
   serializedVersion: 5
@@ -229,6 +215,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+--- !u!114 &8006216430036211536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274433659340541568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8887022b00bb1445adfe48de4437ea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!1 &1615747408728283857
 GameObject:
   m_ObjectHideFlags: 0

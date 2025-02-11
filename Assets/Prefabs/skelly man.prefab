@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4644829453420532422}
   - component: {fileID: 2289697298356549289}
   - component: {fileID: 3665998271942863359}
+  - component: {fileID: -3532456280470685916}
   m_Layer: 0
   m_Name: skelly man
   m_TagString: Enemy
@@ -35,7 +36,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &18990011287320034
 SpriteRenderer:
@@ -103,7 +104,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 500
-  m_StoppingDistance: 3
+  m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -189,16 +190,29 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.044126496, y: -0.29417646}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.45, y: 0.5}
+    oldSize: {x: 1.40625, y: 1.5625}
     newSize: {x: 0.45, y: 0.51}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.45, y: 0.5}
+  m_Size: {x: 0.8324293, y: 1.0883527}
   m_EdgeRadius: 0
+--- !u!114 &-3532456280470685916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061442204058483837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cdc1174def10d04bae59d57d778587a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5

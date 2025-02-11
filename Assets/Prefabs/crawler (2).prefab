@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6496580119351832455}
   - component: {fileID: 5442204547331579993}
   - component: {fileID: 5912927923390922626}
+  - component: {fileID: 6524713306430507708}
   m_Layer: 0
   m_Name: crawler (2)
   m_TagString: Enemy
@@ -202,3 +203,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.45, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &6524713306430507708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045202565505468226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cdc1174def10d04bae59d57d778587a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
