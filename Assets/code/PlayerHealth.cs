@@ -4,10 +4,18 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
+
+    private float nextActionTime = 0.0f;
+    public float period = 0.1f;
+
+    AudioSource audioSource;
+    public AudioClip deathsound;
+
     public int maxHealth;
     int currentHealth;
 
     public Hudmanager HUD;
+    public GameOverManager GameOverManager;
     
     private void Start()
     {
@@ -15,6 +23,8 @@ public class PlayerHealth : MonoBehaviour
        
        HUD.SetMaxValue(maxHealth);
        HUD.UpdateHealthBar(currentHealth);
+
+       audioSource = GetComponent<AudioSource>();
 
     }
 
@@ -40,10 +50,18 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log(Time.time + gameObject.name + " health = " + currentHealth);
     }
     
-    void Die()
+    void Update () 
     {
-        Destroy(gameObject);
+        if (Time.time > nextActionTime ) 
+        {
+            nextActionTime += period;
+        }
     }
     
+    void Die()
+    {
+        GameOverManager.GameOver();
+        audioSource.PlayOneShot(deathsound);
+    }
 }
 
