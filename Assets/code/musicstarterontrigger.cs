@@ -11,7 +11,7 @@ public class musicstarterontrigger : MonoBehaviour
 
     }
 
-    void OnTriggerEnter2D(Collider2D collider)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         audioSource.PlayOneShot(music);
         

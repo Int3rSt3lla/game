@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemybullet : MonoBehaviour
+public class enemyBullet : MonoBehaviour
 {
     public float bulletLife = 1f;
     public float rotation = 0f;
