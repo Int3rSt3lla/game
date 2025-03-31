@@ -11,7 +11,7 @@ public class BossCode2 : MonoBehaviour
     public GameObject AttackPattern6;
     public GameObject AttackPattern7;
 
-    void Start()
+    void OnEnable()
     {
         StartCoroutine(waiter());
     }

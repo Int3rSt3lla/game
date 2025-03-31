@@ -8,6 +8,8 @@ public class collisiondestruction : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
             return;
+        if(collision.gameObject.CompareTag("Bullet"))
+            return;
 
         if (collision.gameObject.CompareTag("Enemy"))
         {

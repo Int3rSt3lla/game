@@ -32,8 +32,7 @@ public class RigidbodyMovement : MonoBehaviour
 
         // Assign velocity directly to the Rigidbody
         rb2d.velocity = moveDirection * moveSpeed;
-        Debug.Log("speed=" + rb2d.velocity);
-
+        
         if (rb2d.velocity.magnitude > 0.1f)
         
         {

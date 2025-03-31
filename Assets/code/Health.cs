@@ -6,6 +6,8 @@ public class Health : MonoBehaviour
 {
     public int maxHealth;
     int currentHealth;
+    public GameObject hiddendoor;
+    
     
     private void Start()
     {
@@ -18,11 +20,17 @@ public class Health : MonoBehaviour
     public void TakeDamage(int damage)
     {
         
+
+        
         currentHealth -= damage;
+        
         if (currentHealth <= 0)
         {
             Die();
             Debug.Log(gameObject.name + " died");
+            
+            hiddendoor.SetActive(false);
+            
         }
         
         if (currentHealth <= 20)
@@ -36,6 +44,8 @@ public class Health : MonoBehaviour
     void Die()
     {
         Destroy(gameObject);
+    
     }
     
+   
 }
