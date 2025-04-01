@@ -13,9 +13,18 @@ public class newscene : MonoBehaviour
    
         void OnTriggerEnter2D (Collider2D collider) 
         {
-            StartCoroutine(Delay()); 
-            FinishLevel.SetActive(true);
+           
+            if (collider.gameObject.CompareTag("Player"))
+            {
+            
+                StartCoroutine(Delay()); 
+                FinishLevel.SetActive(true);
+            }
+            
+
+            
         }
+            
 
         IEnumerator Delay()
         {
